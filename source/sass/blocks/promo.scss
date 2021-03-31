@@ -1,0 +1,25 @@
+.promo {
+  color: $primary-white;
+  background-image: url(../../img/promo-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.promo__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  font-size: 14px;
+  line-height: 18px;
+  color: $primary-white;
+  text-transform: uppercase;
+  text-decoration: none;
+}

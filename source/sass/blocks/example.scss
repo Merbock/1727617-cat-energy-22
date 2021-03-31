@@ -1,0 +1,20 @@
+.example {
+  background-color: $grey-bg-example;
+}
+
+.example__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Arial;
+}
+
+.example__stats-list {
+  list-style: none;
+}
+
+.example__costs {
+  text-transform: uppercase;
+  color: $primary-black;
+  font-size: 14px;
+  line-height: 20px;
+}
