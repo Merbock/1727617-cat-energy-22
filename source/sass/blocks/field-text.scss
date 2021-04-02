@@ -1,0 +1,21 @@
+.field-text__label {
+  line-height: 18px;
+  font-family: $text-custom;
+  text-transform: uppercase;
+}
+
+.field-text__input {
+  padding: 13px 16px;
+  border: 1px solid $grey-border-1;
+  line-height: 18px;
+  font-family: $text-custom;
+  text-transform: uppercase;
+  color: $primary-grey;
+
+  &::placeholder {
+    line-height: 18px;
+    font-family: $text-custom;
+    text-transform: uppercase;
+    color: $primary-grey;
+  }
+}

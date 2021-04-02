@@ -11,6 +11,9 @@
   &--green {
     padding: 11px 26px;
     background-color: $green;
+    text-transform: uppercase;
+    color: $primary-white;
+    font-family: $text-custom;
 
     &:hover {
       background-color: $green-hover;

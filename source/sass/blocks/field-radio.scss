@@ -1,0 +1,34 @@
+.field-radio__label {
+  line-height: 18px;
+  color: $special-grey;
+  font-family: $text-custom;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 45px;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.field-radio__label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $grey-border-2;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.field-radio__input:checked ~ .field-radio__label::before {
+  background-color: #68b738;
+  background-clip: content-box;
+}
+
+.field-radio__input:focus + .field-radio__label::before {
+  outline: auto -webkit-focus-ring-color;
+}
