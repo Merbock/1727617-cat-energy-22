@@ -1,5 +1,5 @@
 .footer__social {
-  list-style: none;
+  @include list-reset;
 }
 
 .footer__copyright {

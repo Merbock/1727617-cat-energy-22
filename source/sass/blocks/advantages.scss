@@ -1,9 +1,13 @@
 .advantages__list {
-  list-style: none;
+  @include list-reset;
 }
 
 .advantages__text {
   font-size: 14px;
   line-height: 18px;
-  font-family: Arial;
+  margin: 0;
+}
+
+.advantages__title {
+  margin: 0;
 }
