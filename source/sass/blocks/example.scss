@@ -1,0 +1,26 @@
+.example {
+  background-color: $grey-bg-example;
+}
+
+.example__title {
+  margin: 0;
+}
+
+.example__text {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.example__stats-list {
+  @include list-reset;
+}
+
+.example__costs {
+  text-transform: uppercase;
+  color: $primary-black;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $text-custom;
+  margin: 0;
+}

@@ -1,0 +1,9 @@
+.footer__social {
+  @include list-reset;
+}
+
+.footer__copyright {
+  line-height: 18px;
+  color: $primary-grey;
+  text-decoration: none;
+}
