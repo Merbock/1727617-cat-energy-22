@@ -1,27 +1,26 @@
-.form-group__list {
-  @include list-reset;
-  list-style: none;
-}
-
-.form-group__textarea {
-  border: 1px solid $grey-border-1;
-  line-height: 18px;
-  color: $primary-grey;
-  text-transform: uppercase;
-  font-family: $text-custom;
-
-  &::placeholder {
-    line-height: 18px;
-    color: $primary-grey;
-    text-transform: uppercase;
-    font-family: $text-custom;
-  }
-}
-
 .form-group {
   &--contacts {
     .field-text__input {
       border: 1px solid $grey-border-2;
     }
+  }
+}
+
+.form-group__list {
+  @include list-reset;
+}
+
+.form-group__textarea {
+  font-size: 16px;
+  line-height: 18px;
+  color: $primary-grey;
+  text-transform: uppercase;
+  font-family: $text-custom;
+  border: 1px solid $grey-border-1;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: $primary-grey;
   }
 }

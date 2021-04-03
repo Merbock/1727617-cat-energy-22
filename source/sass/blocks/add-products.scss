@@ -1,0 +1,20 @@
+.add-products__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $primary-black;
+  font-family: $text-custom;
+  margin: 0;
+}
+
+.add-products__list {
+  @include list-reset;
+}
+
+.add-products__promo {
+  background-image: url("../img/gift-photo-mobile.jpg");
+  background-color: $green;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

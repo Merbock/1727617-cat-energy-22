@@ -6,23 +6,35 @@
   border-radius: 0;
   background-color: $transparent;
   cursor: pointer;
-  padding: 0;
+  font-family: $text-custom;
+  text-transform: uppercase;
+  padding: 11px 26px;
 
   &--green {
-    padding: 11px 26px;
     background-color: $green;
-    text-transform: uppercase;
     color: $primary-white;
-    font-family: $text-custom;
 
     &:hover {
       background-color: $green-hover;
-      transition: $transition;
+      transition: $transition-time background-color;
     }
 
     &:active {
-      background-color: $green-hover;
       color: rgba($primary-white, 0.3);
+    }
+  }
+
+  &--grey {
+    background-color: $grey-bg;
+    color: $primary-grey;
+
+    &:hover {
+      background-color: $grey-border-3;
+      transition: $transition-time background-color;
+    }
+
+    &:active {
+      color: rgba($primary-grey, 0.3);
     }
   }
 }

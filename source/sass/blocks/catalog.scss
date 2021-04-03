@@ -1,0 +1,12 @@
+.catalog__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $primary-black;
+  font-family: $text-custom;
+  margin: 0;
+}
+
+.catalog__list {
+  @include list-reset;
+}
