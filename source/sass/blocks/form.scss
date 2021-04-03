@@ -1,0 +1,23 @@
+.form__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-family: $text-custom;
+  color: $primary-black;
+  font-weight: 400;
+  margin: 0;
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $text-custom;
+  text-transform: uppercase;
+  color: $primary-black;
+  margin: 0;
+}
+
+.form__group {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
