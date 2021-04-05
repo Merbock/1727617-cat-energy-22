@@ -1,9 +1,12 @@
+//colors
+
 $primary-white: #ffffff;
 $primary-grey: #444444;
 $primary-black: #000000;
 $special-grey: #222222;
 $green: #68b738;
 $green-hover: #5eaa2f;
+$green-cat: #63a73c;
 $grey-bg: #f2f2f2;
 $grey-bg-example: #eaeaea;
 $grey-border-1: #e7e7e7;
@@ -11,7 +14,18 @@ $grey-border-2: #cdcdcd;
 $grey-border-3: #d9d9d9;
 $grey-border-3: #ebebeb;
 $grey-contacts: #111111;
+$transparent: rgba($primary-white, 0);
+
+//fonts
+
 $text-primary: "Arial", sans-serif;
 $text-custom: "Oswald", "Arial", sans-serif;
+
+//other
+
 $transition-time: 0.3s;
-$transparent: rgba($primary-white, 0);
+
+//viewports
+
+$tablet-width: 768px;
+$desktop-width: 1300px;

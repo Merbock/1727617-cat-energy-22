@@ -1,0 +1,43 @@
+.header {
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  background-image: url("../img/promo-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $green-cat;
+  min-height: 302px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    background-image: url("../img/index-background-desktop.jpg");
+    background-size: 720px 694px;
+    background-position: top right;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    min-height: 694px;
+  }
+}
+
+.header__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__toggle {
+  display: none;
+}

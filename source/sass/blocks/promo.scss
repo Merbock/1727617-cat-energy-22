@@ -1,8 +1,16 @@
 .promo {
   color: $primary-white;
-  background-image: url("../img/promo-bg.jpg");
-  background-repeat: no-repeat;
   font-family: $text-custom;
+  margin-bottom: 20px;
+  
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    color: $primary-black;
+  }
+}
+
+.promo__inner {
+  display: grid;
 }
 
 .promo__title {
@@ -10,6 +18,14 @@
   line-height: 36px;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    max-width: 414px;
+  }
 }
 
 .promo__subtitle {
@@ -17,9 +33,22 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 49px;
+  }
 }
 
 .promo__link {
   font-size: 14px;
   line-height: 18px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 245px;
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
 }

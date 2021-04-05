@@ -1,9 +1,34 @@
+.footer__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
 .footer__social {
   @include list-reset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .footer__copyright {
   line-height: 18px;
   color: $primary-grey;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

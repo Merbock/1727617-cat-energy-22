@@ -4,3 +4,12 @@
   text-transform: uppercase;
   font-family: $text-custom;
 }
+
+.slider__control {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__items-before {
+  text-align: center;
+}

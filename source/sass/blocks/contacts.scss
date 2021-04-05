@@ -1,4 +1,6 @@
 .contacts__title {
+  width: 140px;
+  font-size: 16px;
   line-height: 18px;
   color: $grey-contacts;
   font-weight: 400;
@@ -8,6 +10,31 @@
 }
 
 .contacts__address {
+  width: 140px;
   font-size: 14px;
   line-height: 20px;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+  }
 }
+
+.contacts__city {
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+}
+
+.contacts__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
+}
+

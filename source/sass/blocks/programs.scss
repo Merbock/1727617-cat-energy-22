@@ -1,7 +1,33 @@
+.programs {
+  margin-bottom: 20px;
+}
+
 .programs__list {
   @include list-reset;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
   background-color: $grey-bg;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.programs__item + .programs__item {
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+
 }
