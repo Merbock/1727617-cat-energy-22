@@ -1,18 +1,33 @@
 .example {
   background-color: $grey-bg-example;
   padding: 25px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
 }
 
-.example__inner {
+.example__container {
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.example__info-box {
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
 .example__title {
   margin: 0;
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .example__text {
@@ -20,6 +35,17 @@
   line-height: 18px;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+    max-width: 436px;
+  }
 }
 
 .example__wrapper {
@@ -27,11 +53,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: start;
+    margin-bottom: 0;
   }
 }
 
@@ -60,10 +88,13 @@
   font-family: $text-custom;
   margin: 0;
   text-align: center;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
-    max-width: 135px;
+    max-width: 174px;
+    font-size: 20px;
     text-align: right;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,13 +105,13 @@
 }
 
 .example__costs-text {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 9px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 63px;
-  }
-}
-
-.stats__item + .stats__item {
-  @media (min-width: $tablet-width) {
-    margin-left: 42px;
+    margin-bottom: 0;
   }
 }
