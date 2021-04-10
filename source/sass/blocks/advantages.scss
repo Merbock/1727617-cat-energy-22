@@ -1,13 +1,121 @@
+.advantages {
+  padding-top: 27px;
+  padding-bottom: 42px;
+  border-bottom: 1px solid $grey-border-5;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .advantages__list {
   @include list-reset;
+  display: grid;
+  row-gap: 20px;
+  counter-reset: list;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 140px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .advantages__text {
   font-size: 14px;
   line-height: 18px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 110px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .advantages__title {
   margin: 0;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: $green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    min-height: 280px;
+    padding-left: 0;
+    display: block;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 60px;
+      height: 60px;
+      margin-right: 0;
+      background-color: $green;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::after {
+      counter-increment: list;
+      content: counter(list);
+      position: absolute;
+      top: -36px;
+      right: 0;
+      width: 135px;
+      height: 280px;
+      font-size: 280px;
+      line-height: 280px;
+      color: $grey-bg;
+      font-family: $text-custom;
+      z-index: -1;
+    }
+  }
+
+  &--leaf::before {
+    background-image: url("../img/icons/icon-leaf.svg");
+  }
+
+  &--powder::before {
+    background-image: url("../img/icons/icon-powder.svg");
+  }
+
+  &--dining::before {
+    background-image: url("../img/icons/icon-dining.svg");
+  }
+
+  &--clock::before {
+    background-image: url("../img/icons/icon-clock.svg");
+  }
 }

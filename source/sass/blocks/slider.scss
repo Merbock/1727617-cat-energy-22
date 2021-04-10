@@ -3,4 +3,104 @@
   color: $primary-black;
   text-transform: uppercase;
   font-family: $text-custom;
+  padding: 0;
+  transition: $transition-time border;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted $grey-border-7;
+    padding-bottom: 3px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &:hover {
+      border-bottom: 1px solid $slider-btn-hov;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+}
+
+.slider__items {
+  margin-bottom: 23px;
+}
+
+.slider__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+  }
+}
+
+.slider__items-before {
+  text-align: center;
+}
+
+.slider__range {
+  display: flex;
+  min-width: 84px;
+  min-height: 14px;
+  padding: 4px 6px;
+  margin: 0 12px;
+  border: 1px solid $grey-border-2;
+  border-radius: 6px;
+  background-color: $primary-white;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    min-width: 428px;
+    min-height: 6px;
+    padding: 0;
+    margin: 0 24px;
+    background-color: $grey-border-6;
+    border: none;
+  }
+}
+
+.slider__toggle {
+  display: inline-block;
+  width: 35px;
+  height: 6px;
+  background-color: $green;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: $transition-time box-shadow, $transition-time border;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background-color: $primary-white;
+    left: 50%;
+    top: -14px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 1px solid $grey-border-6;
+    box-shadow: 0 2px 3px 0 rgba($primary-black, 0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: $green;
+      border-radius: 6px;
+    }
+
+    &:hover {
+      box-shadow: 0 4px 4px 0 rgba($primary-black, 0.19);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba($primary-black, 0.2);
+      border: 1px solid $green;
+    }
+  }
 }

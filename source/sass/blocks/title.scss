@@ -4,4 +4,9 @@
   color: $primary-black;
   font-weight: 400;
   font-family: $text-custom;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
