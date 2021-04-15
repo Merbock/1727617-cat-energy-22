@@ -21,6 +21,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    padding-left: 118px;
   }
 }
 
@@ -31,7 +32,6 @@
     grid-column: 1/-1;
     grid-row: 3/5;
     margin: 0;
-    padding-left: 88px;
     width: 709px;
     height: 609px;
     margin-top: -30px;
@@ -58,8 +58,6 @@
     line-height: 60px;
     margin-bottom: 40px;
     max-width: 414px;
-    margin-left: 88px;
-    margin-top: 30px;
   }
 }
 
@@ -74,7 +72,6 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 49px;
-    margin-left: 88px;
   }
 }
 
@@ -89,7 +86,6 @@
     grid-row-start: 3;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 88px;
     padding: 17px 26px;
   }
 }

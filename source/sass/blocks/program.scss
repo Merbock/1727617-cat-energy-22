@@ -150,16 +150,15 @@
   &::after {
     content: "";
     position: absolute;
-    background-image: url("../img/icons/icon-arrow.svg");
+    background-image: url("../img/icons/icon-arrow-hov.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+    background-position: right center;
     width: 24px;
     height: 11px;
-    left: 82%;
+    right: 8px;
     top: 50%;
     transform: translateY(-50%);
-    transition: $transition-time ease width;
+    transition: $transition-time ease width, $transition-time ease right;
   }
 
   &:active {
@@ -168,7 +167,7 @@
 
   &:hover::after {
     width: 32px;
-    background-image: url("../img/icons/icon-arrow-hov.svg");
+    right: 0;
   }
 
   @media (min-width: $tablet-width) {

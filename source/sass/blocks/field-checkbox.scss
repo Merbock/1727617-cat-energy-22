@@ -8,7 +8,18 @@
   padding-top: 10px;
   padding-bottom: 10px;
   display: block;
+  width: 100%;
   cursor: pointer;
+
+  &:hover::before {
+    border-color: $grey-border-8;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field-checkbox__label::before {
@@ -22,6 +33,12 @@
   border: 1px solid $grey-border-2;
   background-repeat: no-repeat;
   background-position: center;
+  transition: $transition-time border-color;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .field-checkbox__input:checked + .field-checkbox__label::before {
@@ -30,4 +47,8 @@
 
 .field-checkbox__input:focus + .field-checkbox__label::before {
   outline: auto -webkit-focus-ring-color;
+}
+
+.field-checkbox__input:disabled + .field-checkbox__label {
+  opacity: 0.3;
 }
