@@ -2,6 +2,10 @@
   &--email,
   &--phone {
     position: relative;
+
+    .field-text__input {
+      padding-right: 50px;
+    }
   }
 }
 
@@ -38,13 +42,15 @@
     outline: 1px solid $primary-grey;
   }
 
-  &:focus:invalid {
-    border-color: $border-error;
-    outline: 1px solid $border-error;
-  }
-
   &:focus + .field-text__icon {
     fill: $green;
+  }
+
+  &--error {
+    &:focus:invalid {
+      border-color: $border-error;
+      outline: 1px solid $border-error;
+    }
   }
 
   &::placeholder {
