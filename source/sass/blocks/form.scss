@@ -5,6 +5,15 @@
   color: $primary-black;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 37px;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+    padding-top: 0;
+  }
 }
 
 .form__text {
@@ -14,10 +23,41 @@
   text-transform: uppercase;
   color: $primary-black;
   margin: 0;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 323px;
+    margin-bottom: 66px;
+  }
+}
+
+.form__box {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .form__group {
   padding: 0;
   margin: 0;
   border: none;
+}
+
+.form__submit {
+  text-align: center;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 72px;
+  }
 }

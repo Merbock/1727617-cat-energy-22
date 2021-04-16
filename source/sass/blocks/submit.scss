@@ -3,4 +3,21 @@
   font-size: 14px;
   line-height: 16px;
   color: $primary-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.submit__button {
+  margin-bottom: 21px;
+  display: block;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 20px;
+    padding: 14px 0;
+  }
 }

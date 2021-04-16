@@ -1,11 +1,29 @@
+.field-text {
+  &--email,
+  &--phone {
+    position: relative;
+
+    .field-text__input {
+      padding-right: 50px;
+    }
+  }
+}
+
 .field-text__label {
   font-size: 16px;
   line-height: 18px;
   font-family: $text-custom;
   text-transform: uppercase;
+  padding-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field-text__input {
+  flex-grow: 1;
   padding: 13px 16px;
   border: 1px solid $grey-border-1;
   font-size: 16px;
@@ -13,10 +31,51 @@
   font-family: $text-custom;
   text-transform: uppercase;
   color: $primary-grey;
+  transition: $transition-time border-color;
+
+  &:hover {
+    border-color: $grey-border-2;
+  }
+
+  &:focus {
+    border-color: $primary-grey;
+    outline: 1px solid $primary-grey;
+  }
+
+  &:focus + .field-text__icon {
+    fill: $green;
+  }
+
+  &--error {
+    &:focus:invalid {
+      border-color: $border-error;
+      outline: 1px solid $border-error;
+    }
+  }
 
   &::placeholder {
     font-size: 16px;
     line-height: 18px;
     color: $primary-grey;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 16px;
+  }
+}
+
+.field-text__icon {
+  position: absolute;
+  right: 15px;
+
+  @media (min-width: $tablet-width) {
+    right: 20px;
   }
 }
