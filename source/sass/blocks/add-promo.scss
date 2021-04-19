@@ -1,5 +1,43 @@
+.add-promo {
+  margin-top: 40px;
+  margin-bottom: 35px;
+  padding: 58px 0 43px 0;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    flex-direction: row;
+    padding-right: 116px;
+    padding-left: 78px;
+    margin-top: 0;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    padding: 56px 43px 43px 43px;
+    min-height: 289px;
+    margin-bottom: 0;
+  }
+}
+
 .add-promo__text {
   line-height: 20px;
   color: $primary-white;
   margin: 0;
+  position: relative;
+  max-width: 161px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

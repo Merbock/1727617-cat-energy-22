@@ -1,6 +1,15 @@
 .description-list__item {
   font-size: 12px;
   line-height: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $grey-border-2;
+  }
 }
 
 .description-list__definition {
