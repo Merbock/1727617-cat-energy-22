@@ -1,3 +1,19 @@
+.catalog-more {
+  @media (min-width: $tablet-width) {
+    padding-top: 81px;
+  }
+}
+
+.catalog-more__box {
+  text-align: center;
+  border-bottom: 1px solid $grey-border-4;
+
+  @media (min-width: $tablet-width) {
+    padding: 54px 35px 40px 35px;
+    border: 2px solid $grey-bg;
+  }
+}
+
 .catalog-more__title {
   font-size: 16px;
   line-height: 20px;
@@ -5,11 +21,66 @@
   color: $grey-contacts;
   font-family: $text-custom;
   text-transform: uppercase;
+  position: relative;
   margin: 0;
+  margin-bottom: 8px;
+  padding-top: 55px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    max-width: 134px;
+    margin: 0 auto;
+    padding-top: 107px;
+    margin-bottom: 23px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: $grey-border-9;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 14px);
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: $grey-border-9;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 14px) rotate(90deg);
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+    }
+  }
 }
 
 .catalog-more__subtitle {
   font-size: 12px;
   line-height: 16px;
   margin: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 167px;
+    margin: 0 auto;
+    margin-bottom: 87px;
+  }
+}
+
+.catalog-more__button {
+  display: block;
 }
