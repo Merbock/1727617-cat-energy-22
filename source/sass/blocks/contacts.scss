@@ -105,6 +105,13 @@
   }
 }
 
+.contacts__pin img {
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 106px;
+  }
+}
+
 .contacts__img {
   display: block;
   width: 100%;

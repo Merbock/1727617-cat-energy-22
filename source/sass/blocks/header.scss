@@ -8,7 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 0;
+    padding-top: 53px;
+    padding-bottom: 33px;
   }
 }
 
@@ -17,12 +18,17 @@
   position: absolute;
   left: 0;
   z-index: -1;
-  background-image: url("../img/promo-bg.jpg");
+  background-image: url("../img/index-background-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: $green-cat;
   min-height: 302px;
   width: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: contain;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -37,6 +43,10 @@
     left: 50%;
     width: 50%;
     min-height: 694px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -46,8 +56,6 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
