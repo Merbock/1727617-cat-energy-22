@@ -1,17 +1,31 @@
 .example {
   background-color: $grey-bg-example;
-  padding: 25px 0;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
+    background-color: $transparent;
+    background-image: linear-gradient(to top,  $grey-bg-example 460px, $grey-bg-example, $primary-white, $primary-white 460px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    background-image: unset;
+    background-image: linear-gradient(to bottom, $primary-white 169px, $transparent 169px), linear-gradient(to left, $grey-bg-example 50%, $grey-bg 50%);
   }
 }
 
 .example__container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    padding-top: 0;
   }
 }
 
@@ -27,6 +41,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 56px;
+    margin-bottom: 146px;
   }
 }
 

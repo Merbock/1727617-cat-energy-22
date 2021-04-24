@@ -10,6 +10,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-bottom: 0;
+    border-bottom: none;
   }
 }
 
@@ -70,7 +71,7 @@
 
   @media (min-width: $tablet-width) {
     width: 230px;
-    min-height: 280px;
+    min-height: 260px;
     padding-left: 0;
     display: block;
 

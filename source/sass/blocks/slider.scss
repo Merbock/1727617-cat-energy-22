@@ -1,3 +1,10 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-bottom: 80px;
+  }
+}
+
 .slider__btn {
   line-height: 20px;
   color: $primary-black;
@@ -24,6 +31,16 @@
 
 .slider__items {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    max-width: 690px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
 }
 
 .slider__control {
@@ -33,11 +50,44 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 40px;
+    position: relative;
+    z-index: 21;
+    padding-left: 4px;
   }
 }
 
 .slider__items-before {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: 20;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, $primary-white, $primary-white 175px, $grey-bg-example 175px, $grey-bg-example);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, $primary-white, $primary-white 169px, $grey-bg 169px, $grey-bg);
+  }
+}
+
+.slider__items-after {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: relative;
+  }
+}
+
+.slider__img {
+  @media (min-width: $tablet-width) {
+    max-width: inherit;
+  }
 }
 
 .slider__range {
