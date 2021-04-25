@@ -1,7 +1,6 @@
 .slider {
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-bottom: 80px;
   }
 }
 
@@ -56,7 +55,7 @@
   }
 }
 
-.slider__items-before {
+.slider__before {
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -75,7 +74,7 @@
   }
 }
 
-.slider__items-after {
+.slider__after {
   display: none;
 
   @media (min-width: $tablet-width) {
