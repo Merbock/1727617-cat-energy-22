@@ -53,6 +53,10 @@
     }
   }
 
+  &::-moz-placeholder {
+    opacity: 1;
+  }
+
   &::placeholder {
     font-size: 16px;
     line-height: 18px;

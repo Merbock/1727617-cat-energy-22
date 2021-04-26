@@ -45,7 +45,8 @@
 }
 
 .field-checkbox__input:focus + .field-checkbox__label::before {
-  outline: auto -webkit-focus-ring-color;
+  border-color: $green;
+  outline: 1px solid $green;
 }
 
 .field-checkbox__input:disabled + .field-checkbox__label {
