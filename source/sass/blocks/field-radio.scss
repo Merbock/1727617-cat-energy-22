@@ -48,7 +48,7 @@
 }
 
 .field-radio__input:focus + .field-radio__label::before {
-  outline: auto -webkit-focus-ring-color;
+  border-color: $green;
 }
 
 .field-radio__input:disabled + .field-radio__label {

@@ -129,6 +129,15 @@
   width: 100%;
   min-height: 150px;
 
+  &:focus {
+    border-color: $primary-grey;
+    outline: 1px solid $primary-grey;
+  }
+
+  &::-moz-placeholder {
+    opacity: 1;
+  }
+
   &::placeholder {
     font-size: 16px;
     line-height: 18px;
