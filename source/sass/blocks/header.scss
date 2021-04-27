@@ -143,3 +143,15 @@
     display: none;
   }
 }
+
+.header__logo {
+  transition: $transition-time;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
