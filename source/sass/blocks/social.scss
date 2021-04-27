@@ -1,1 +1,26 @@
 //comment
+.social__item-link {
+  &:hover .social__img {
+    fill: $green;
+  }
+
+  &:active .social__img {
+    opacity: 0.3;
+  }
+
+  &--fb .social__img {
+    stroke: $special-grey-2;
+    stroke-width: 1.1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  &--fb:hover .social__img {
+    stroke: $green;
+  }
+}
+
+.social__img {
+  fill: $special-grey-2;
+  transition: $transition-time;
+}
