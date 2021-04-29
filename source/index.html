@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="favicons.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="header header--bg">
@@ -46,6 +46,9 @@
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__subtitle">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
             <img class="promo__img" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" alt="Корм для кошек Cat Energy Pro" width="280" height="270">
@@ -115,12 +118,16 @@
             <div class="slider__items">
               <div class="slider__before">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
                   <img class="slider__img" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Фото кота до похудения">
                 </picture>
               </div>
               <div class="slider__after">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
                   <img class="slider__img" src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="Фото кота после похудения">
                 </picture>
@@ -148,6 +155,9 @@
         </div>
         <div class="contacts__map">
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/map-desk.webp 1x, img/map-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mob.webp 1x, img/map-mob@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/map-desk.png 1x, img/map-desk.png 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet.png 2x">
             <img class="contacts__img" src="img/map-mob.png" srcset="img/map-mob@2x.png 2x" alt="Офис по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362">

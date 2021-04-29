@@ -21,7 +21,7 @@
   text-align: center;
   display: inline-block;
   margin-bottom: 32px;
-  transition: $transition-time;
+  transition: opacity $transition-time;
 
   &[href]:hover {
     opacity: 0.8;
@@ -69,6 +69,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: opacity $transition-time;
+}
+
+.footer__copyright path {
+  transition: fill $transition-time;
+}
+
+.footer__copyright:hover path {
+  fill: $green;
+}
+
+.footer__copyright:active {
+  opacity: 0.3;
 }
 
 .footer__copyright-sign {

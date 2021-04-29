@@ -42,14 +42,19 @@
     outline: 1px solid $primary-grey;
   }
 
-  &:focus + .field-text__icon {
-    fill: $green;
-  }
-
   &--error {
     &:focus:invalid {
       border-color: $border-error;
       outline: 1px solid $border-error;
+    }
+
+    &:focus:invalid + .field-text__icon--email line,
+    &:focus:invalid + .field-text__icon--email path {
+      stroke: $border-error;
+    }
+
+    &:focus:invalid + .field-text__icon--phone path {
+      fill: $border-error;
     }
   }
 
@@ -82,4 +87,22 @@
   @media (min-width: $tablet-width) {
     right: 20px;
   }
+}
+
+.field-text__input:focus + .field-text__icon--phone path {
+  fill: $green;
+}
+
+.field-text__input:focus + .field-text__icon--email line,
+.field-text__input:focus + .field-text__icon--email path {
+  stroke: $green;
+}
+
+.field-text__input + .field-text__icon--email line,
+.field-text__input + .field-text__icon--email path {
+  transition: stroke $transition-time;
+}
+
+.field-text__input + .field-text__icon--phone path {
+  transition: fill $transition-time;
 }

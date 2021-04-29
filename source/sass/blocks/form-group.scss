@@ -1,9 +1,5 @@
 .form-group {
   &--contacts {
-    .field-text__input {
-      border: 1px solid $grey-border-2;
-    }
-
     .form-group__item {
       margin-bottom: 14px;
 
@@ -128,6 +124,7 @@
   padding: 12px;
   width: 100%;
   min-height: 150px;
+  transition: border-color $transition-time;
 
   &:focus {
     border-color: $primary-grey;
