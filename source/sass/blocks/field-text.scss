@@ -58,14 +58,11 @@
     }
   }
 
-  &::-moz-placeholder {
-    opacity: 1;
-  }
-
   &::placeholder {
     font-size: 16px;
     line-height: 18px;
     color: $primary-grey;
+    opacity: 1;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -83,26 +80,13 @@
 .field-text__icon {
   position: absolute;
   right: 15px;
+  transition: color $transition-time;
 
   @media (min-width: $tablet-width) {
     right: 20px;
   }
 }
 
-.field-text__input:focus + .field-text__icon--phone path {
-  fill: $green;
-}
-
-.field-text__input:focus + .field-text__icon--email line,
-.field-text__input:focus + .field-text__icon--email path {
-  stroke: $green;
-}
-
-.field-text__input + .field-text__icon--email line,
-.field-text__input + .field-text__icon--email path {
-  transition: stroke $transition-time;
-}
-
-.field-text__input + .field-text__icon--phone path {
-  transition: fill $transition-time;
+.field-text__input:focus + .field-text__icon {
+  color: $green;
 }

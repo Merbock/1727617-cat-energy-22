@@ -72,12 +72,12 @@
   transition: opacity $transition-time;
 }
 
-.footer__copyright path {
-  transition: fill $transition-time;
+.footer__img {
+  transition: color $transition-time;
 }
 
-.footer__copyright:hover path {
-  fill: $green;
+.footer__copyright:hover .footer__img {
+  color: $green;
 }
 
 .footer__copyright:active {
