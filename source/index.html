@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="favicons.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="header header--bg">
@@ -46,6 +46,9 @@
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__subtitle">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
             <img class="promo__img" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" alt="Корм для кошек Cat Energy Pro" width="280" height="270">
@@ -115,12 +118,16 @@
             <div class="slider__items">
               <div class="slider__before">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
                   <img class="slider__img" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Фото кота до похудения">
                 </picture>
               </div>
               <div class="slider__after">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
                   <img class="slider__img" src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="Фото кота после похудения">
                 </picture>
@@ -148,6 +155,9 @@
         </div>
         <div class="contacts__map">
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/map-desk.webp 1x, img/map-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mob.webp 1x, img/map-mob@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/map-desk.png 1x, img/map-desk.png 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet.png 2x">
             <img class="contacts__img" src="img/map-mob.png" srcset="img/map-mob@2x.png 2x" alt="Офис по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362">
@@ -188,12 +198,12 @@
         </ul>
         <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип академии">
           <span class="footer__copyright-sign">HTML Academy</span>
-          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
+          <svg class="footer__img" width="27" height="34">
+            <use xlink:href="img/sprite.svg#logo-academy"></use>
           </svg>
         </a>
       </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

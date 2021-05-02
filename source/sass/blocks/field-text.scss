@@ -42,25 +42,27 @@
     outline: 1px solid $primary-grey;
   }
 
-  &:focus + .field-text__icon {
-    fill: $green;
-  }
-
   &--error {
     &:focus:invalid {
       border-color: $border-error;
       outline: 1px solid $border-error;
     }
-  }
 
-  &::-moz-placeholder {
-    opacity: 1;
+    &:focus:invalid + .field-text__icon--email line,
+    &:focus:invalid + .field-text__icon--email path {
+      stroke: $border-error;
+    }
+
+    &:focus:invalid + .field-text__icon--phone path {
+      fill: $border-error;
+    }
   }
 
   &::placeholder {
     font-size: 16px;
     line-height: 18px;
     color: $primary-grey;
+    opacity: 1;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -78,8 +80,13 @@
 .field-text__icon {
   position: absolute;
   right: 15px;
+  transition: color $transition-time;
 
   @media (min-width: $tablet-width) {
     right: 20px;
   }
+}
+
+.field-text__input:focus + .field-text__icon {
+  color: $green;
 }

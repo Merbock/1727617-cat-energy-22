@@ -1,26 +1,31 @@
 //comment
 .social__item-link {
-  &:hover .social__img {
-    fill: $green;
+  display: inline-block;
+  color: $special-grey-2;
+  transition: color $transition-time, opacity $transition-time;
+
+  &:hover {
+    color: $green;
   }
 
-  &:active .social__img {
+  &:active {
     opacity: 0.3;
   }
 
-  &--fb .social__img {
-    stroke: $special-grey-2;
-    stroke-width: 1.1;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
+  @media (min-width: $tablet-width) {
+    &--vk .social__img {
+      width: 30px;
+      height: 22px;
+    }
 
-  &--fb:hover .social__img {
-    stroke: $green;
-  }
-}
+    &--ig .social__img {
+      width: 23px;
+      height: 23px;
+    }
 
-.social__img {
-  fill: $special-grey-2;
-  transition: $transition-time;
+    &--fb .social__img {
+      width: 28px;
+      height: 33px;
+    }
+  }
 }

@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     background-color: $transparent;
     background-image: linear-gradient(to top, $grey-bg-example 460px, $grey-bg-example, $primary-white, $primary-white 460px);
+    padding-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
