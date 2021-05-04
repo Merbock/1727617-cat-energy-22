@@ -8,13 +8,8 @@
     display: block;
   }
 
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: unset;
-  }
-
-  @media (min-width: $desktop-width) {
-    &--index {
+  &--index {
+    @media (min-width: $desktop-width) {
       .main-nav__link {
         color: $primary-white;
 
@@ -23,6 +18,16 @@
         }
       }
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: unset;
+    margin-top: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 
@@ -45,7 +50,7 @@
   font-weight: 500;
   font-family: $text-custom;
   display: block;
-  padding: 20px 0 20px 0;
+  padding: 18px 0 17px 0;
   margin-left: -20px;
   margin-right: -20px;
   border-top: 1px solid $grey-border-5;

@@ -34,6 +34,7 @@
     max-width: 130px;
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 14px;
   }
 }
 
@@ -52,8 +53,8 @@
 .product__img {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 14px 0 12px 0;
+  align-items: flex-end;
+  height: 112px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -68,6 +69,6 @@
   margin-top: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 33px;
+    margin-top: 32px;
   }
 }

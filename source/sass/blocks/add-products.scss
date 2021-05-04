@@ -2,8 +2,8 @@
   line-height: 24px;
   font-weight: 400;
   font-family: $text-custom;
-  margin-top: 25px;
-  margin-bottom: 36px;
+  margin-top: 36px;
+  margin-bottom: 34px;
   max-width: none;
 
   @media (min-width: $tablet-width) {
@@ -15,15 +15,16 @@
 
   @media (min-width: $desktop-width) {
     margin-left: -40px;
+    margin-top: 78px;
   }
 }
 
 .add-products__item {
-  padding: 13px 0 18px 0;
+  padding: 13px 0 17px 0;
   border-bottom: 1px solid $grey-border-2;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 0 26px 0;
+    padding: 27px 0 26px 0;
   }
 
   @media (min-width: $desktop-width) {

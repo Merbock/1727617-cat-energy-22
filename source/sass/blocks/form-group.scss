@@ -1,10 +1,16 @@
 .form-group {
   &--contacts {
     .form-group__item {
-      margin-bottom: 14px;
+      margin-bottom: 13px;
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      .form-group__item {
+        margin-bottom: 20px;
       }
     }
 
@@ -30,8 +36,8 @@
   }
 
   &--program {
-    margin: 24px -20px 26px -20px;
-    padding: 20px;
+    margin: 22px -20px 28px -20px;
+    padding: 20px 20px 18px 20px;
     border-top: 1px solid $grey-border-3;
     border-bottom: 1px solid $grey-border-3;
 
@@ -40,7 +46,7 @@
       margin-left: 0;
       border: 1px solid $grey-border-3;
       margin-top: 72px;
-      margin-bottom: 72px;
+      margin-bottom: 75px;
     }
 
     @media (min-width: $desktop-width) {
@@ -49,24 +55,24 @@
   }
 
   &--comment {
-    margin-top: 37px;
+    margin-top: 26px;
     margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 76px;
-      margin-bottom: 65px;
+      margin-top: 65px;
+      margin-bottom: 61px;
     }
   }
 
   &--extra {
-    margin-bottom: 34px;
+    margin-bottom: 25px;
 
-    @media (min-width: $desktop-width) {
-      margin-bottom: 54px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 45px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 61px;
+      margin-bottom: 54px;
     }
 
     .form-title {
@@ -85,13 +91,13 @@
       display: grid;
       align-items: flex-start;
       grid-template-columns: 1fr 1fr;
-      row-gap: 25px;
+      row-gap: 22px;
       column-gap: 60px;
     }
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      column-gap: 104px;
+      column-gap: 80px;
     }
   }
 
@@ -107,10 +113,19 @@
 .form-group__item {
   display: flex;
   align-items: center;
+  margin-bottom: 4px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form-group__title {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .form-group__textarea {
@@ -121,7 +136,7 @@
   font-family: $text-custom;
   border: 1px solid $grey-border-1;
   resize: none;
-  padding: 12px;
+  padding: 10px 12px 12px 14px;
   width: 100%;
   min-height: 150px;
   transition: border-color $transition-time;
@@ -149,5 +164,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    min-height: 174px;
   }
 }

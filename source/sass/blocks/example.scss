@@ -3,19 +3,19 @@
 
   @media (min-width: $tablet-width) {
     background-color: $transparent;
-    background-image: linear-gradient(to top, $grey-bg-example 460px, $grey-bg-example, $primary-white, $primary-white 460px);
-    padding-bottom: 80px;
+    background-image: linear-gradient(to top, $grey-bg-example 462px, $grey-bg-example, $primary-white, $primary-white 462px);
+    padding-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
-    background-image: linear-gradient(to bottom, $primary-white 169px, $transparent 169px), linear-gradient(to left, $grey-bg-example calc(50% - 265px), $grey-bg calc(50% - 265px));
+    background-image: linear-gradient(to bottom, $primary-white 185px, $transparent 185px), linear-gradient(to left, $grey-bg-example calc(50% - 325px), $grey-bg calc(50% - 325px));
   }
 }
 
 .example__container {
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
@@ -24,22 +24,21 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
     padding-top: 0;
-    padding-bottom: 80px;
+    padding-bottom: 58px;
   }
 }
 
 .example__title {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 56px;
+    margin-top: 49px;
     margin-bottom: 146px;
   }
 }
@@ -48,12 +47,14 @@
   font-size: 14px;
   line-height: 18px;
   margin: 0;
+  margin-right: -3px;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 53px;
     font-size: 16px;
     line-height: 24px;
+    max-width: 700px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,7 +68,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,7 +91,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 39px;
   }
 }
 
@@ -108,7 +109,7 @@
     max-width: 174px;
     font-size: 20px;
     text-align: right;
-    margin-bottom: 0;
+    margin-bottom: 18px;
   }
 
   @media (min-width: $desktop-width) {

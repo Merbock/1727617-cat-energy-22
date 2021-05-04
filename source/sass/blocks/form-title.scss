@@ -5,7 +5,7 @@
   color: $primary-black;
   font-family: $text-custom;
   position: relative;
-  max-width: 219px;
+  max-width: 200px;
   background-color: $primary-white;
   padding-right: 19px;
 
@@ -17,6 +17,10 @@
     line-height: 36px;
     max-width: none;
     margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 35px;
   }
 
   &--line {
