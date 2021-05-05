@@ -22,21 +22,22 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    width: unset;
+    width: 440px;
     margin-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
+    width: 480px;
   }
 }
 
 .main-nav__item {
   @media (min-width: $tablet-width) {
-    margin-right: 35px;
+    margin-left: 35px;
 
-    &:last-child {
-      margin-right: 0;
+    &:first-child {
+      margin-left: 0;
     }
   }
 }
@@ -104,5 +105,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
   }
 }
