@@ -1,4 +1,15 @@
-//comment
+.social__item {
+  margin-right: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .social__item-link {
   display: inline-block;
   color: $special-grey-2;

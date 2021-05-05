@@ -1,6 +1,6 @@
 .add-promo {
   margin-top: 40px;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
   padding: 58px 0 43px 0;
   min-height: 290px;
   display: flex;
@@ -11,7 +11,8 @@
   @media (min-width: $tablet-width) {
     min-height: 200px;
     flex-direction: row;
-    padding-right: 116px;
+    padding-top: 47px;
+    padding-right: 123px;
     padding-left: 78px;
     margin-top: 0;
     margin-bottom: 76px;
@@ -19,7 +20,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    padding: 56px 43px 43px 43px;
+    padding: 56px 42px 43px 42px;
     min-height: 289px;
     margin-bottom: 0;
   }

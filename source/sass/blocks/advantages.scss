@@ -4,7 +4,8 @@
   border-bottom: 1px solid $grey-border-5;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    padding-bottom: 26px;
+    padding-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,9 +22,9 @@
   counter-reset: list;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 140px;
-    row-gap: 37px;
+    grid-template-columns: 35% 35%;
+    column-gap: 136px;
+    row-gap: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,7 +39,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 110px;
+    padding-top: 112px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -46,10 +47,10 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 72px;
   }
 }
 
@@ -67,32 +68,27 @@
     background-color: $green;
     background-repeat: no-repeat;
     background-position: center;
-  }
 
-  @media (min-width: $tablet-width) {
-    width: 230px;
-    min-height: 260px;
-    padding-left: 0;
-    display: block;
-
-    &::before {
+    @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
       left: 0;
       top: 0;
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
       margin-right: 0;
       background-color: $green;
       background-repeat: no-repeat;
       background-position: center;
     }
+  }
 
-    &::after {
+  &::after {
+    @media (min-width: $tablet-width) {
       counter-increment: list;
       content: counter(list);
       position: absolute;
-      top: -36px;
+      top: -41px;
       right: 0;
       width: 135px;
       height: 280px;
@@ -102,6 +98,16 @@
       font-family: $text-custom;
       z-index: -1;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 130px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 260px;
+    padding-left: 0;
+    display: block;
   }
 
   &--leaf::before {

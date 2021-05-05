@@ -13,10 +13,10 @@
   &--green {
     background-color: $green;
     color: $primary-white;
+    transition: $transition-time background-color, $transition-time color;
 
     &:hover {
       background-color: $green-hover;
-      transition: $transition-time background-color;
     }
 
     &:active {

@@ -14,17 +14,18 @@
   line-height: 18px;
   font-family: $text-custom;
   text-transform: uppercase;
-  padding-right: 13px;
+  padding-right: 12px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-right: 21px;
   }
 }
 
 .field-text__input {
   flex-grow: 1;
-  padding: 13px 16px;
+  padding: 13px 14px;
   border: 1px solid $grey-border-1;
   font-size: 16px;
   line-height: 18px;
@@ -83,7 +84,11 @@
   transition: color $transition-time;
 
   @media (min-width: $tablet-width) {
-    right: 20px;
+    right: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
   }
 }
 

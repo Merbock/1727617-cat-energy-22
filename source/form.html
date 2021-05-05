@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png">
@@ -18,7 +20,7 @@
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="38">
+              <img class="header__img" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="38">
             </picture>
           </a>
           <button class="header__toggle header__toggle--nojs" type="button">
@@ -138,7 +140,7 @@
       <section class="contacts">
         <div class="container container--form">
           <div class="contacts__info contacts__info--bg">
-            <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <h2 class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
             <address class="contacts__address">
               ул. Большая Конюшенная, д. 19/8
               <span class="contacts__city">Санкт-Петербург</span>
