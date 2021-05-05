@@ -83,7 +83,6 @@
   height: 2px;
   background-color: $grey-contacts;
   font-size: 0;
-  transition: $transition-time;
 
   &::before,
   &::after {
@@ -145,7 +144,7 @@
 }
 
 .header__logo {
-  transition: $transition-time;
+  transition: opacity $transition-time;
 
   &[href]:hover {
     opacity: 0.8;
@@ -153,6 +152,11 @@
 
   &[href]:active {
     opacity: 0.6;
+  }
+
+  &[href]:focus {
+    opacity: 0.8;
+    outline: 2px solid $primary-black;
   }
 
   @media (min-width: $tablet-width) {

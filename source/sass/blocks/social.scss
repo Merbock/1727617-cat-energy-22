@@ -13,7 +13,7 @@
 .social__item-link {
   display: inline-block;
   color: $special-grey-2;
-  transition: color $transition-time, opacity $transition-time;
+  transition: $transition-time color, $transition-time opacity;
 
   &:hover {
     color: $green;
@@ -21,6 +21,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus {
+    color: $green;
+    outline: 2px solid $primary-black;
   }
 
   @media (min-width: $tablet-width) {
