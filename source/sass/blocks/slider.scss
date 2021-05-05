@@ -30,6 +30,10 @@
     &:active {
       border-bottom: 1px solid $transparent;
     }
+
+    &:focus {
+      outline: 2px solid $slider-btn-hov;
+    }
   }
 }
 
@@ -123,7 +127,6 @@
 }
 
 .slider__toggle {
-  font-size: 0;
   display: inline-block;
   width: 35px;
   height: 6px;
@@ -163,6 +166,11 @@
     &:active {
       box-shadow: 0 3px 5px 0 rgba($primary-black, 0.2);
       border: 1px solid $green;
+    }
+
+    &:focus {
+      border-color: $green;
+      outline: 1px solid $green;
     }
   }
 }

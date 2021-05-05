@@ -22,11 +22,17 @@
     &:active {
       color: rgba($primary-white, 0.3);
     }
+
+    &:focus {
+      background-color: $green-hover;
+      outline: 2px solid $primary-black;
+    }
   }
 
   &--grey {
     background-color: $grey-bg;
     color: $primary-grey;
+    transition: $transition-time background-color, $transition-time color;
 
     &:hover {
       background-color: $grey-border-3;
@@ -35,6 +41,11 @@
 
     &:active {
       color: rgba($primary-grey, 0.3);
+    }
+
+    &:focus {
+      background-color: $grey-border-3;
+      outline: 2px solid $primary-black;
     }
   }
 }

@@ -81,7 +81,7 @@
 .field-text__icon {
   position: absolute;
   right: 15px;
-  transition: color $transition-time;
+  transition: $transition-time color;
 
   @media (min-width: $tablet-width) {
     right: 12px;

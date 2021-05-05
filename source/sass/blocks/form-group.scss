@@ -139,7 +139,7 @@
   padding: 10px 12px 12px 14px;
   width: 100%;
   min-height: 150px;
-  transition: border-color $transition-time;
+  transition: $transition-time border-color;
 
   &:focus {
     border-color: $primary-grey;

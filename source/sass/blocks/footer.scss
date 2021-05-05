@@ -21,7 +21,7 @@
   text-align: center;
   display: inline-block;
   margin-bottom: 27px;
-  transition: opacity $transition-time;
+  transition: $transition-time opacity;
 
   &[href]:hover {
     opacity: 0.8;
@@ -29,6 +29,11 @@
 
   &[href]:active {
     opacity: 0.6;
+  }
+
+  &[href]:focus {
+    opacity: 0.6;
+    outline: 2px solid $primary-black;
   }
 
   @media (min-width: $tablet-width) {
@@ -62,19 +67,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: opacity $transition-time;
+  transition: $transition-time opacity;
 }
 
 .footer__img {
-  transition: color $transition-time;
+  transition: $transition-time color;
 }
 
-.footer__copyright:hover .footer__img {
+.footer__copyright:hover .footer__img,
+.footer__copyright:focus .footer__img {
   color: $green;
 }
 
 .footer__copyright:active {
   opacity: 0.3;
+}
+
+.footer__copyright:focus {
+  outline: 2px solid $primary-black;
 }
 
 .footer__copyright-sign {
